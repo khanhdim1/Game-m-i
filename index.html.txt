@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi Game Nổ Hũ & Mini Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="login-container" class="centered">
+    <h2>Đăng nhập / Đăng ký</h2>
+    <input type="text" id="username" placeholder="Tên tài khoản" />
+    <input type="password" id="password" placeholder="Mật khẩu" />
+    <div>
+      <button id="btn-login">Đăng nhập</button>
+      <button id="btn-register">Đăng ký</button>
+    </div>
+    <div id="login-msg" class="message"></div>
+  </div>
+
+  <div id="main-container" class="hidden">
+    <header>
+      <h1>Chào, <span id="display-username"></span></h1>
+      <div id="balance-info">Số dư: <span id="display-balance">0</span> xu</div>
+      <button id="btn-logout">Đăng xuất</button>
+    </header>
+
+    <nav>
+      <button class="game-btn" data-game="slot">Nổ Hũ Slot</button>
+      <button class="game-btn" data-game="baccarat">Baccarat</button>
+      <button class="game-btn" data-game="dogfight">Đá Gà</button>
+      <button class="game-btn" data-game="lottery">Số Đề (Lô Đề)</button>
+    </nav>
+
+    <section id="game-area">
+      <!-- Game sẽ hiện ở đây -->
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

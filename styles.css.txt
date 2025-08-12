@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; padding: 0;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Orbitron', sans-serif;
+  color: #eee;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+#login-container input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 220px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+#login-container button {
+  margin: 10px 5px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0055ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 8px #08f;
+  transition: background-color 0.3s ease;
+}
+
+#login-container button:hover {
+  background-color: #0088ff;
+}
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #f55;
+  min-height: 22px;
+}
+
+#main-container {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.game-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: #0044cc;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0077ff;
+  transition: background-color 0.3s ease;
+}
+
+.game-btn:hover {
+  background-color: #0066ff;
+}
+
+#game-area {
+  flex-grow: 1;
+  background: #111822;
+  border-radius: 15px;
+  box-shadow:
+    0 0 20px #00f, 
+    0 0 40px #08f,
+    inset 0 0 20px #0ff;
+  padding: 20px;
+  overflow-y: auto;
+  color: #0ff;
+}
+
+button#btn-logout {
+  background-color: #ff4444;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px #f00;
+}
+
+button#btn-logout:hover {
+  background-color: #ff0000;
+}
